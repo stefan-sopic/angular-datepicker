@@ -107,12 +107,12 @@ Module.directive('datePicker', ['datePickerConfig', 'datePickerUtils', function 
         }
       };
 
+
       function update() {
         var view = scope.view;
 
         if (scope.model && !arrowClick) {
           scope.date = new Date(scope.model);
-          arrowClick = false;
         }
         var date = scope.date;
 
